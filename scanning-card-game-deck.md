@@ -2,7 +2,7 @@
 
 One of my favorite card games is [Parade](https://boardgamegeek.com/boardgame/56692/parade). It is a game for 2 to 6 players that lasts around half an hour per game. If you're curious about how to play, check out [the game rules](https://github.com/clancygeodata/image-manipulation/blob/master/zm1201_parade_rules.pdf).
 
-I have been playing card games online with some friends by using [playingcards.io](https://playingcards.io/), a simple, convenient, and free website for creating a virtual table for a card game. Some of its features include automated card recalling, shuffling, and dealing. Customizable decks of cards can be used by adding text or images to the virtual cards. I wanted images to use for a virtual deck of cards for Parade, so I scanned each card.
+I have been playing card games online with some friends by using [PlayingCards.io](https://playingcards.io/), a simple, convenient, and free website for creating a virtual table for a card game. Some of its features include automated card recalling, shuffling, and dealing. Customizable decks of cards can be used by adding text or images to the virtual cards. I wanted images to use for a virtual deck of cards for Parade, so I scanned each card.
 
 ## Scanning each card
 
@@ -10,15 +10,16 @@ To have consistent orientation of the cards and simplify the cropping process la
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan.jpg)
 
-The initial images are relatively high resolution for my needs, but I wanted to scan at a high resolution and then scale them down lower to be used for the virtual cards. Here is the same image, but scaled down to a resolution suitable for use in the virtual card table (via [playingcards.io](https://playingcards.io/)):
+The initial images are relatively high resolution for my needs, but I wanted to scan at a high resolution and then scale them down lower to be used for the virtual cards. Here is the same image, but scaled down to a resolution suitable for use in the virtual card table (via [PlayingCards.io](https://playingcards.io/)):
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_low_res.jpg)
 
-The images look okay at this point, but the grid of the screened card surface is prominantly visible. I would rather it be less visible, but how can that be accomplished?
+The images look okay at this point, but the screened texture on the card surface is prominantly visible as a grid of dots. I would rather it be less visible, but how can that be accomplished?
 
 ## Improving the images
 
-GIMP (GNU Image Manipulation Program)...
+To crop and scale down the images, I used [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program), which is free and open source image editing software (similar to Adobe Photoshop, but free).
+
 Several plugins for GIMP...
 
 ## G'MIC plugin for GIMP
