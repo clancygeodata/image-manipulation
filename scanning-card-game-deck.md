@@ -10,6 +10,12 @@ To have consistent orientation of the cards and simplify the cropping process la
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan.jpg)
 
+The initial images are relatively high resolution for my needs, but I wanted to scan at a high resolution and then scale them down lower to be used for the virtual cards. Here is the same image, but scaled down to a resolution suitable for use in the virtual card table (via [playingcards.io](https://playingcards.io/)):
+
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_low_res.jpg)
+
+The images look okay at this point, but the grid of the screened card surface is prominantly visible. I would rather it be less visible, but how can that be accomplished?
+
 ## Improving the images
 
 GIMP (GNU Image Manipulation Program)...
@@ -40,7 +46,7 @@ BIMP (Batch Image Manipulation Plugin) provides a convenient graphical user inte
 Description...
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=DJh1AB0VdFk
-" target="_blank"><img src="http://img.youtube.com/vi/DJh1AB0VdFk/3.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/DJh1AB0VdFk/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ## Final color adjustments
 
