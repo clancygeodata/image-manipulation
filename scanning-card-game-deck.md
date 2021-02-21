@@ -1,31 +1,46 @@
 # Scanning Playing Cards
 
-I decided to scan each card of Parade, one of my favorite card games.
+One of my favorite card games is [Parade](https://boardgamegeek.com/boardgame/56692/parade). It is a game for 2 to 6 players that lasts around half an hour per game. If you're curious about how to play, check out [the game rules](https://github.com/clancygeodata/image-manipulation/blob/master/zm1201_parade_rules.pdf).
 
-Info about the game...
+I have been playing card games online with some friends by using [playingcards.io](https://playingcards.io/), a simple, convenient, and free website for creating a virtual table for a card game. Some of its features include automated card recalling, shuffling, and dealing. Customizable decks of cards can be used by adding text or images to the virtual cards. I wanted images to use for a virtual deck of cards for Parade, so I scanned each card.
 
-## Scanning the images
+## Scanning each card
 
-Scanner...
-HP Smart software...
+To have consistent orientation of the cards and simplify the cropping process later, I individually scanned each card aligned in the top right corner of the scanning extent. I used the flatbed scanner of an HP OfficeJet Pro 9015. I used the HP Smart software to control the scanner and save the images. I scanned the cards at a resolution of 600 dpi. Here is one of the resulting images, after being cropped to fit the illustration on the card:
 
-## Software used
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan.jpg)
+
+## Improving the images
 
 GIMP (GNU Image Manipulation Program)...
 Several plugins for GIMP...
 
-## Initial scans
-
-image...
-
 ## G'MIC plugin for GIMP
 
+Description of G'MIC
+Link to GitHub
 List functions I tried...
 
 ## Descreen filter in G'MIC
 
-image...
+Applied this filter twice...
+Description of the filter...
+Link to GitHub
+
+## Before vs after descreen
+
+image vs image
 
 ## BIMP for GIMP
 
-Batch Image Manipulation Plugin
+BIMP (Batch Image Manipulation Plugin) provides a convenient graphical user interface for applying the same tools, filters, manipulations, etc. to a group or batch of images.
+
+## G'MIC within BIMP
+
+Description...
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=DJh1AB0VdFk
+" target="_blank"><img src="http://img.youtube.com/vi/DJh1AB0VdFk/3.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+## Final color adjustments
+
