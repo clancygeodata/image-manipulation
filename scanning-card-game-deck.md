@@ -41,18 +41,20 @@ The **Descreen** filter is effective at reducing the dot grid. It seems to prese
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
 
-I found a [file](https://github.com/dtschump/gmic-community/blob/master/include/andreas_pahlsson.gmic) with more information about the filter. It describes the process as:
-- Separate to CMYK-channels. Makes sense for printed materials but was actually introduced to minimize RAM usage on very large images.
-- FFT (fast Fourier transform) each channel, keep real part.
-- DOG (difference of Gaussian) for peak detection.
-- Create mask based on peaks with blur.
-- iFFT (inverse FFT) and recombine.
+I found a [file with more information about the filter](https://github.com/dtschump/gmic-community/blob/master/include/andreas_pahlsson.gmic). It describes the process as:
+> - Separate to CMYK-channels. Makes sense for printed materials but was actually introduced to minimize RAM usage on very large images.
+> - FFT [fast Fourier transform] each channel, keep real part.
+> - DOG [difference of Gaussian] for peak detection.
+> - Create mask based on peaks with blur.
+> - iFFT [inverse FFT] and recombine.
 
 ## Before vs after
 
 Here is a comparison of before and after (left and right, respectively) applying the G'MIC **Descreen** filter twice: 
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg)![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen_small.jpg)
+
+At this image scale, the difference is subtle but the illustration is more clearly visible in the image after this process.
 
 ## BIMP for GIMP
 
