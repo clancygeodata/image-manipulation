@@ -18,15 +18,20 @@ The images look okay at this point, but the screened texture on the card surface
 
 ## Improving the images
 
-To crop and scale down the images, I used [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program), which is free and open source image editing software (similar to Adobe Photoshop, but free).
+To crop and scale down the images, I used [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program), which is free and open source image editing software (similar to Adobe Photoshop, but free). GIMP has many options for enhancing and modifying images. A variety of plugins can be added in GIMP for even more options.
 
-Several plugins for GIMP...
+## G'MIC-Qt plugin for GIMP
 
-## G'MIC plugin for GIMP
+[G'MIC](https://gmic.eu/) is an open source collection of image processing tools with multiple options for user interfaces. [G'MIC-Qt](https://github.com/c-koi/gmic-qt) is a plugin that provides G'MIC with a user interface for GIMP and other image software (Krita, Photoshop, Affinity Photo, PaintShop Pro, PhotoLine, and Paint.NET).
 
-Description of G'MIC
-Link to GitHub
-List functions I tried...
+Here are some of the G'MIC filters that I tried using for making the dot grid less visible in the images or isolating it:
+- Frequencies > Fourier Transform
+- Details > Split Details [Gaussian]
+- Details > Split Details [Wavelets]
+- Repair > Unstrip
+- Repair > Despeckle
+- Repair > Smooth [Median]
+- Repair > Descreen
 
 ## Descreen filter in G'MIC
 
@@ -49,5 +54,6 @@ Description...
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=DJh1AB0VdFk
 " target="_blank"><img src="http://img.youtube.com/vi/DJh1AB0VdFk/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-## Final color adjustments
+## Color adjustments
 
+Some of the images were too brightly colored, especially those of the yellow cards. I made some color adjustments to make them easier to read.
