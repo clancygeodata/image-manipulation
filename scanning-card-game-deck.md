@@ -12,7 +12,7 @@ To have consistent orientation of the cards and simplify the cropping process la
 
 The initial images are relatively high resolution for my needs, but I wanted to scan at a high resolution and then scale them down lower to be used for the virtual cards. Here is the same image, but scaled down to a resolution suitable for use in the virtual card table (via [PlayingCards.io](https://playingcards.io/)):
 
-![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_low_res.jpg)
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg)
 
 The images look okay at this point, but the screened texture on the card surface is prominantly visible as a grid of dots. I would rather it be less visible, but how can that be accomplished?
 
@@ -22,9 +22,9 @@ To crop and scale down the images, I used [GIMP](https://www.gimp.org/) (GNU Ima
 
 ## G'MIC-Qt plugin for GIMP
 
-[G'MIC](https://gmic.eu/) is an open source collection of image processing tools with multiple options for user interfaces. [G'MIC-Qt](https://github.com/c-koi/gmic-qt) is a plugin that provides G'MIC with a user interface for GIMP and other image software (Krita, Photoshop, Affinity Photo, PaintShop Pro, PhotoLine, and Paint.NET).
+[G'MIC](https://gmic.eu/) is an open source collection of image manipulation tools with multiple options for user interfaces. [G'MIC-Qt](https://github.com/c-koi/gmic-qt) is a plugin that provides G'MIC with a user interface for GIMP and other image software (Krita, Photoshop, Affinity Photo, PaintShop Pro, PhotoLine, and Paint.NET).
 
-Here are some of the G'MIC filters that I tried using for making the dot grid less visible in the images or isolating it:
+G'MIC has many powerful image filters. Here are some of the G'MIC filters that I tried using for making the dot grid less visible in the images or isolating it:
 - Frequencies > Fourier Transform
 - Details > Split Details [Gaussian]
 - Details > Split Details [Wavelets]
@@ -35,21 +35,23 @@ Here are some of the G'MIC filters that I tried using for making the dot grid le
 
 ## Descreen filter in G'MIC
 
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
+
 Applied this filter twice...
 Description of the filter...
 Link to GitHub
 
-## Before vs after descreen
+## Before vs after
 
-image vs image
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg)![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen_small.jpg)
 
 ## BIMP for GIMP
 
-BIMP (Batch Image Manipulation Plugin) provides a convenient graphical user interface for applying the same tools, filters, manipulations, etc. to a group or batch of images.
+BIMP (Batch Image Manipulation Plugin) provides a convenient graphical user interface for applying the same manipulation processes to a group or batch of images. Once I chose the processes I wanted to use for one image, I used BIMP to conveniently apply those processes to all of the card images.
 
 ## G'MIC within BIMP
 
-Description...
+This video demonstrates how to use G'MIC filters
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=DJh1AB0VdFk
 " target="_blank"><img src="http://img.youtube.com/vi/DJh1AB0VdFk/0.jpg" 
