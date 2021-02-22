@@ -33,25 +33,34 @@ G'MIC has many powerful image filters. Here are some of the G'MIC filters that I
 - Repair > Smooth [Median]
 - Repair > Descreen
 
+I found that using the **Smooth [Median]** and **Descreen** filters were the most effective at making the dot grid less visible. The **Smooth [Median]** (with a radius of 7) is great at removing the dot grid, but I noticed that it can degrade thin lines in the illustration.
+
 ## Descreen filter in G'MIC
+
+The **Descreen** filter is effective at reducing the dot grid. It seems to preserve lines in the illustration and even strengthen some of the lines. I found that applying this filter twice gives results that I am satisfied with:
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
 
-Applied this filter twice...
-Description of the filter...
-Link to GitHub
+I found a [file](https://github.com/dtschump/gmic-community/blob/master/include/andreas_pahlsson.gmic) with more information about the filter. It describes the process as:
+- Separate to CMYK-channels. Makes sense for printed materials but was actually introduced to minimize RAM usage on very large images.
+- FFT (fast Fourier transform) each channel, keep real part.
+- DOG (difference of Gaussian) for peak detection.
+- Create mask based on peaks with blur.
+- iFFT (inverse FFT) and recombine.
 
 ## Before vs after
+
+Here is a comparison of before and after (left and right, respectively) applying the G'MIC **Descreen** filter twice: 
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg)![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen_small.jpg)
 
 ## BIMP for GIMP
 
-BIMP (Batch Image Manipulation Plugin) provides a convenient graphical user interface for applying the same manipulation processes to a group or batch of images. Once I chose the processes I wanted to use for one image, I used BIMP to conveniently apply those processes to all of the card images.
+[BIMP](https://alessandrofrancesconi.it/projects/bimp/) (Batch Image Manipulation Plugin) provides a convenient graphical user interface for applying the same manipulation processes to a group or batch of images. Once I chose the processes I wanted to use for one image, I used BIMP to conveniently apply those processes to all of the card images.
 
-## G'MIC within BIMP
+## G'MIC with BIMP
 
-This video demonstrates how to use G'MIC filters
+Using G'MIC filters with BIMP is easy. I learned from this video which demonstrates how to do it:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=DJh1AB0VdFk
 " target="_blank"><img src="http://img.youtube.com/vi/DJh1AB0VdFk/0.jpg" 
