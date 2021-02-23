@@ -56,11 +56,6 @@ I found a [file with more information about the filter](https://github.com/dtsch
 > - Create mask based on peaks with blur.
 > - iFFT [inverse FFT] and recombine.
 
-## Before vs after
-
- 
-
-
 ## BIMP for GIMP
 
 [BIMP](https://alessandrofrancesconi.it/projects/bimp/) (Batch Image Manipulation Plugin) provides a convenient graphical user interface for applying the same manipulation processes to a group or batch of images. Once I chose the processes I wanted to use for one image, I used BIMP to conveniently apply those processes to all of the card images.
