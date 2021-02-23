@@ -39,7 +39,9 @@ I found that using the **Smooth [Median]** and **Descreen** filters were the mos
 
 The **Descreen** filter is effective at reducing the dot grid. It seems to preserve lines in the illustration and even strengthen some of the lines. I found that applying this filter twice gives results that I am satisfied with. Here is a comparison of before and after (left and right, respectively) applying the G'MIC **Descreen** filter twice:
 
-| table1 | table2 |
+| head1 | head2 | head3 |
+| --- | --- | --- |
+| cell1 | cell2 | cell3 |
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan.jpg) | ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
 
