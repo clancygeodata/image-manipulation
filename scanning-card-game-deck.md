@@ -37,9 +37,13 @@ I found that using the **Smooth [Median]** and **Descreen** filters were the mos
 
 ## Descreen filter in G'MIC
 
-The **Descreen** filter is effective at reducing the dot grid. It seems to preserve lines in the illustration and even strengthen some of the lines. I found that applying this filter twice gives results that I am satisfied with:
+The **Descreen** filter is effective at reducing the dot grid. It seems to preserve lines in the illustration and even strengthen some of the lines. I found that applying this filter twice gives results that I am satisfied with. Here is a comparison of before and after (left and right, respectively) applying the G'MIC **Descreen** filter twice:
 
-![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan.jpg)![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
+
+![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg)![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen_small.jpg)
+
+At the smaller scale, the difference is subtle but the illustration is more clearly visible in the image after this process.
 
 I found a [file with more information about the filter](https://github.com/dtschump/gmic-community/blob/master/include/andreas_pahlsson.gmic). It describes the process as:
 > - Separate to CMYK-channels. Makes sense for printed materials but was actually introduced to minimize RAM usage on very large images.
@@ -50,11 +54,8 @@ I found a [file with more information about the filter](https://github.com/dtsch
 
 ## Before vs after
 
-Here is a comparison of before and after (left and right, respectively) applying the G'MIC **Descreen** filter twice: 
+ 
 
-![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg)![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen_small.jpg)
-
-At this image scale, the difference is subtle but the illustration is more clearly visible in the image after this process.
 
 ## BIMP for GIMP
 
