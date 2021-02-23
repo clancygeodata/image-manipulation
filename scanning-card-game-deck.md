@@ -43,6 +43,8 @@ The **Descreen** filter is effective at reducing the dot grid. It seems to prese
 | --- | --- | --- |
 | cell1 | cell2 | cell3 |
 
+Before | After
+--- | ---
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan.jpg) | ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen.jpg)
 
 ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_scan_small.jpg) | ![alt text](https://github.com/clancygeodata/image-manipulation/blob/master/purple_2_descreen_small.jpg)
